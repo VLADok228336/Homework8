@@ -552,11 +552,11 @@ if input() == "Yeah, that stupid goul can't stop me!":
 else:
     print("Your bravery is less than zero! OK, but he's faster! You can't choose!")
     time.sleep(1)
-goul_health=randint(1, level+1*30-hlevel*2)#Conditions changed to Universe balance
+goul_health=randint(1, (level+1)*50+hlevel*2)#Conditions changed to Universe balance
 f = True
 while goul_health>0:
     hero_damage = randint(5, level*10-hlevel)#TO UNVERSE BALANCE
-    goul_damage = randint(1, hlevel)
+    goul_damage = randint(1, hlevel*10)
     print("Bang!")
     time.sleep(0.2)
     health-=goul_damage
