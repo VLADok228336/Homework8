@@ -1,0 +1,45 @@
+.block-1 {
+    float: left;
+    padding-bottom: 51%;
+    padding-right: 20px;
+    color: white;
+    background-color: green;
+}
+
+.block-2 {
+    position: absolute;
+    background-color: #5F9EA0;
+    left: 95%;
+    padding: 10px 15px 120px 5px;
+    color: white;
+    text-decoration: dashed;
+}
+
+.block-3 {
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    padding-bottom: 90px;
+    width: 300px;
+    height: 200px;
+    background-color: chocolate;
+    text-align: left;
+}
+
+p.main {
+    padding-bottom: 50px;
+}
+
+p.ghj {
+    color: black;
+    background-color: gray;
+    margin-bottom: 40px;
+    width: 350px;
+}
+
+img {
+    position: absolute;
+    left: 86%;
+    top: 81%;
+}
