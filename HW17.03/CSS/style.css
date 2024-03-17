@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu {
+    margin-right: 20px;
+    background-color: aqua;
+}
+
+.nav-item {
+    height: 20px;
+    margin: 15px;
+}
+
+.nav-link {
+    visibility: hidden;
+}
+
+.nav-item:hover {
+    transition: 1s;
+    height: 50px;
+}
+
+.nav-item:hover~.nav-item:hover {
+    visibility: visible;
+}

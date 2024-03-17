@@ -23,16 +23,16 @@ def instructions():
     guess()
 def check(num, guess):
     if guess == num:
-        return True
-    else:
-        return False
+        return "="
+    elif guess>num:
+        return ">"
 def guess():
     tries = 1
     number = randint(0, 10000)
     while True:
         coolPrint("Enter a number:")
         guess = int(input())
-        if check(number, guess):
+        if check(number, guess)=="=":
             coolPrint("OMG! What a nice guess!")
             coolPrint(f"You win only with {tries} tries!")
             coolPrint("Wanna play again(y/n)?")
@@ -43,8 +43,9 @@ def guess():
             else:
                 tries = 1
                 number = randint(0, 10000)
-        else:
+        elif check(number, guess)==">":
             coolPrint("That was nice try, but no")
+            tries+=1
             if number>guess:
                 coolPrint("Higher!")
             if number< guess:

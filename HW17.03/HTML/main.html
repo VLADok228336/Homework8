@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Main - Monolith.ru</title>
-    <link rel="stylesheet" href="/HW17.03/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script>
+        function changeVisibility(visibility) {
+            document.getElementsByClassName("nav-link").style.visibility = visibility;
+        }
+    </script>
     <!-- <script type="text/javascript" src="/HW17.03/Initialize/jquery.js"></script>
     <script>
         $('html, body').animate({
@@ -17,7 +22,7 @@
     <header>
         <nav class="menu">
             <ul>
-                <li class="nav-item">MAIN PAGE <br>
+                <li class="nav-item" onmouseenter="changeVisibility('visible')" onmouseleave="changeVisibility('hidden')">MAIN PAGE <br>
                     <a class="nav-link" href="#thehistory">History of Monolith</a><br>
                     <a class="nav-link" href="defending">The defending of Monolith</a></li>
                 <li class="nav-item">TABLE INFORMATION ABOUT MONOLITH</li>
