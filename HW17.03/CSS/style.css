@@ -73,3 +73,8 @@ footer {
     background: linear-gradient(red, blue);
     font-size: 50px;
 }
+
+.images-at-row {
+    display: flex;
+    flex-direction: row;
+}
