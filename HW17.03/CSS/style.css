@@ -78,3 +78,23 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.left {
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.p-images {
+    margin-left: 10px;
+    margin-right: 10px;
+}
